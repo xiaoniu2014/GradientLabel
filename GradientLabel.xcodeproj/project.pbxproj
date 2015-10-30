@@ -15,6 +15,10 @@
 		C57F29401BE34A51009079FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C57F293E1BE34A51009079FB /* LaunchScreen.storyboard */; };
 		C57F294B1BE34A51009079FB /* GradientLabelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C57F294A1BE34A51009079FB /* GradientLabelTests.m */; };
 		C57F29561BE34A51009079FB /* GradientLabelUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C57F29551BE34A51009079FB /* GradientLabelUITests.m */; };
+		C57F29651BE34A62009079FB /* HWGradientLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = C57F29641BE34A62009079FB /* HWGradientLabel.m */; };
+		C57F29681BE3529F009079FB /* HWProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = C57F29671BE3529F009079FB /* HWProgressView.m */; };
+		C57F296B1BE3630C009079FB /* HWCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = C57F296A1BE3630C009079FB /* HWCircleView.m */; };
+		C57F296F1BE36592009079FB /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = C57F296E1BE36592009079FB /* MBProgressHUD.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,14 @@
 		C57F29511BE34A51009079FB /* GradientLabelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GradientLabelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C57F29551BE34A51009079FB /* GradientLabelUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GradientLabelUITests.m; sourceTree = "<group>"; };
 		C57F29571BE34A51009079FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C57F29631BE34A62009079FB /* HWGradientLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWGradientLabel.h; sourceTree = "<group>"; };
+		C57F29641BE34A62009079FB /* HWGradientLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWGradientLabel.m; sourceTree = "<group>"; };
+		C57F29661BE3529F009079FB /* HWProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWProgressView.h; sourceTree = "<group>"; };
+		C57F29671BE3529F009079FB /* HWProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWProgressView.m; sourceTree = "<group>"; };
+		C57F29691BE3630C009079FB /* HWCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWCircleView.h; sourceTree = "<group>"; };
+		C57F296A1BE3630C009079FB /* HWCircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWCircleView.m; sourceTree = "<group>"; };
+		C57F296D1BE36592009079FB /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		C57F296E1BE36592009079FB /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +113,12 @@
 		C57F292F1BE34A51009079FB /* GradientLabel */ = {
 			isa = PBXGroup;
 			children = (
+				C57F296C1BE36592009079FB /* MBProgressHUD */,
 				C57F29331BE34A51009079FB /* AppDelegate.h */,
 				C57F29341BE34A51009079FB /* AppDelegate.m */,
 				C57F29361BE34A51009079FB /* ViewController.h */,
 				C57F29371BE34A51009079FB /* ViewController.m */,
+				C57F29741BE3663F009079FB /* New Group */,
 				C57F29391BE34A51009079FB /* Main.storyboard */,
 				C57F293C1BE34A51009079FB /* Assets.xcassets */,
 				C57F293E1BE34A51009079FB /* LaunchScreen.storyboard */,
@@ -138,6 +152,28 @@
 				C57F29571BE34A51009079FB /* Info.plist */,
 			);
 			path = GradientLabelUITests;
+			sourceTree = "<group>";
+		};
+		C57F296C1BE36592009079FB /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				C57F296D1BE36592009079FB /* MBProgressHUD.h */,
+				C57F296E1BE36592009079FB /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		C57F29741BE3663F009079FB /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				C57F29691BE3630C009079FB /* HWCircleView.h */,
+				C57F296A1BE3630C009079FB /* HWCircleView.m */,
+				C57F29631BE34A62009079FB /* HWGradientLabel.h */,
+				C57F29641BE34A62009079FB /* HWGradientLabel.m */,
+				C57F29661BE3529F009079FB /* HWProgressView.h */,
+				C57F29671BE3529F009079FB /* HWProgressView.m */,
+			);
+			name = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +238,7 @@
 		C57F29251BE34A51009079FB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = HW;
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = hongw;
 				TargetAttributes = {
@@ -271,8 +308,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C57F29381BE34A51009079FB /* ViewController.m in Sources */,
+				C57F29651BE34A62009079FB /* HWGradientLabel.m in Sources */,
 				C57F29351BE34A51009079FB /* AppDelegate.m in Sources */,
+				C57F296B1BE3630C009079FB /* HWCircleView.m in Sources */,
+				C57F29681BE3529F009079FB /* HWProgressView.m in Sources */,
 				C57F29321BE34A51009079FB /* main.m in Sources */,
+				C57F296F1BE36592009079FB /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,6 +537,7 @@
 				C57F295C1BE34A51009079FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C57F295D1BE34A51009079FB /* Build configuration list for PBXNativeTarget "GradientLabelTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +546,7 @@
 				C57F295F1BE34A51009079FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C57F29601BE34A51009079FB /* Build configuration list for PBXNativeTarget "GradientLabelUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +555,7 @@
 				C57F29621BE34A51009079FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
